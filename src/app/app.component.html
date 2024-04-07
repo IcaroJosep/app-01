@@ -1,51 +1,60 @@
 <body>
-<h1>pagina 01 </h1><br>\
-<hr>
-<app-header></app-header>
-<br> 
-<router-outlet></router-outlet>
-<br>
+    <h1>pagina 01 </h1><br>
+    <hr>
+    <app-header></app-header>
+    <br>
+    <router-outlet></router-outlet>
+    <br>
 
-<hr>
+    <hr>
 
-<br>
-<ul>
-    <li>item 1 - {{descricao1}}</li>
-    <li>item 2 - {{descricao2}}</li>
-</ul>
-<label> digite uma descricao </label>
-<input [(ngModel)]="descricao2"/> <br>
-<br>
-<hr>
+    <br>
+    <ul>
+        <li>item 1 - {{descricao1}}</li>
+        <li>item 2 - {{descricao2}}</li>
+    </ul>
+    <label> digite uma descricao </label>
+    <input [(ngModel)]="descricao2" /> <br>
+    <br>
+    <hr>
 
-<br>
-<div><input [(ngModel)]="usuario.nome" /></div> <br>
-<div><input [(ngModel)]="usuario.idade"/></div> <br>
-<div><input [(ngModel)]="usuario.id"/> </div><br>
+    <br>
+    <div><input [(ngModel)]="usuario.nome" /></div> <br>
+    <div><input [(ngModel)]="usuario.idade" /></div> <br>
+    <div><input [(ngModel)]="usuario.id" /> </div><br>
 
-<dl>
-    <dt>usuario:</dt>
-    <dd>{{usuario.nome}}</dd>
-    <dt>idade:</dt>
-    <dd>{{usuario.idade}}</dd>
-    <dt>id:</dt>
-    <dd>{{usuario.id}}</dd>
-</dl>
-<br>
-<hr>
-<h1>AULA ; For loops, ifs e condicionais</h1>
-<br>
-    <h2>utilizando lupe IF :</h2>
+    <dl>
+        <dt>usuario:</dt>
+        <dd>{{usuario.nome}}</dd>
+        <dt>idade:</dt>
+        <dd>{{usuario.idade}}</dd>
+        <dt>id:</dt>
+        <dd>{{usuario.id}}</dd>
+    </dl>
+    
+    <hr>
 
-    <div *ngIf="ClientPremium; else NaoPremium">
-        <h3>tu e cliente Premium </h3>
-         <SMAll>TEM PRIVILEGIOS </SMAll>
-    </div>
-    <ng-template #NaoPremium>
-        vai toma no cu
-    </ng-template>
-     <hr style=" border-top: 5px solid orangered; ">
+    <h1>AULA ; For loops, ifs e condicionais</h1>
+    <br>
+        <h2>utilizando lupe IF :</h2>
+
+            <div *ngIf="ClientPremium; else NaoPremium">
+                <h3>tu e cliente Premium </h3>
+                <SMAll>TEM PRIVILEGIOS </SMAll>
+            </div>
+            <ng-template #NaoPremium>
+                 vai toma no cu
+            </ng-template>
+
+<hr style=" border-top: 5px solid orangered; ">
+
         <h2>utilizando lupe FOR :</h2>
+        <ul *ngFor= "let valor of valores">
+            <li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}}</li>
+        </ul>
+
+
+
 
 
 

@@ -20,4 +20,14 @@ export class AppComponent {
     id : 0,}
 
   ClientPremium= true;
+
+  valores = [{
+    descricao: "pedreiro",
+    nome: "icaro 2",
+    id:1
+  },{
+    descricao: "garoto de programa",
+    nome: "icaro 1",
+    id:101
+  }]
 }
