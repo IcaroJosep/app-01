@@ -2,11 +2,28 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
 
+<hr>
+
 <ul>
     <li>item 1 - {{descricao1}}</li>
     <li>item 2 - {{descricao2}}</li>
 </ul>
-
 <label> digite uma descricao </label>
-<br>
-<input [(ngModel)]="descricao2"/>
+<input [(ngModel)]="descricao2"/> <br>
+
+<hr>
+
+<div><input [(ngModel)]="usuario.nome"/></div> <br>
+<div><input [(ngModel)]="usuario.idade"/></div> <br>
+<div><input [(ngModel)]="usuario.id"/> </div><br>
+
+<dl>
+    <dt>usuario:</dt>
+    <dd>{{usuario.nome}}</dd>
+    <dt>idade:</dt>
+    <dd>{{usuario.idade}}</dd>
+    <dt>id:</dt>
+    <dd>{{usuario.id}}</dd>
+</dl>
+
+
