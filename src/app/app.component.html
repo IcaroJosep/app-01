@@ -19,7 +19,7 @@
 <hr>
 
 <br>
-<div><input [(ngModel)]="usuario.nome"/></div> <br>
+<div><input [(ngModel)]="usuario.nome" /></div> <br>
 <div><input [(ngModel)]="usuario.idade"/></div> <br>
 <div><input [(ngModel)]="usuario.id"/> </div><br>
 
@@ -35,7 +35,17 @@
 <hr>
 <h1>AULA ; For loops, ifs e condicionais</h1>
 <br>
+    <h2>utilizando lupe IF :</h2>
 
+    <div *ngIf="ClientPremium; else NaoPremium">
+        <h3>tu e cliente Premium </h3>
+         <SMAll>TEM PRIVILEGIOS </SMAll>
+    </div>
+    <ng-template #NaoPremium>
+        vai toma no cu
+    </ng-template>
+     <hr style=" border-top: 5px solid orangered; ">
+        <h2>utilizando lupe FOR :</h2>
 
 
 

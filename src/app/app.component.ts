@@ -17,6 +17,7 @@ export class AppComponent {
   }={
     nome :"",
     idade : 0 ,
-    id : 0,
-  }
+    id : 0,}
+
+  ClientPremium= true;
 }
