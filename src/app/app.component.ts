@@ -29,5 +29,10 @@ export class AppComponent {
     descricao: "garoto de programa",
     nome: "icaro 1",
     id:101
-  }]
+  }];
+
+  adicionar(){
+    this.valores.push({nome:'adicionado',descricao:'adicionado',id:0})
+  }
+
 }
