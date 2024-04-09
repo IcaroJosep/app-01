@@ -31,28 +31,30 @@
         <dt>id:</dt>
         <dd>{{usuario.id}}</dd>
     </dl>
-    
+
     <hr>
 
     <h1>AULA ; For loops, ifs e condicionais</h1>
     <br>
-        <h2>utilizando lupe IF :</h2>
+    <h2>utilizando lupe IF :</h2>
 
-            <div *ngIf="ClientPremium; else NaoPremium">
-                <h3>tu e cliente Premium </h3>
-                <SMAll>TEM PRIVILEGIOS </SMAll>
-            </div>
-            <ng-template #NaoPremium>
-                 vai toma no cu
-            </ng-template>
+    <div *ngIf="ClientPremium; else NaoPremium">
+        <h3>tu e cliente Premium </h3>
+        <SMAll>TEM PRIVILEGIOS </SMAll>
+    </div>
+    <ng-template #NaoPremium>
+        vai toma no cu
+    </ng-template>
 
-<hr style=" border-top: 5px solid orangered; ">
+    <hr style=" border-top: 5px solid orangered; ">
 
-        <h2>utilizando lupe FOR :</h2>
-        <ul *ngFor= "let valor of valores">
-            <li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}}</li>
-        </ul>
+    <h2>utilizando lupe FOR :</h2>
+    <ul *ngFor="let valor of valores">
+        <li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}}</li>
+    </ul>
 
+    <hr>
+    
 
 
 
