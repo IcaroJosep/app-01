@@ -34,8 +34,9 @@ export class AppComponent {
 
   nome=""; 
   descricao=""
+  id=0
   adicionar(){
-    this.valores.push({nome:this.nome ,descricao:this.descricao,id:0})
+    this.valores.push({nome:this.nome ,descricao:this.descricao,id:this.id})
   }
 
 }

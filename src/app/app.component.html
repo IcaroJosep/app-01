@@ -55,12 +55,21 @@
 
     <hr>
     <br>
+    
     <h1>AULA : Respondendo a eventos no HTML</h1>
     <hr style=" border-top: 5px solid orangered; ">
     <h2>buttom</h2>
-    nome:<input [(ngModel)]="nome" /><br>
-    descricao<input [(ngModel)]="descricao" />
+    nome:<input [(ngModel)]="nome" />
+    descricao:<input [(ngModel)]="descricao" />
+    id:<input [(ngModel)]="id" /> <br>
     <button (click)="adicionar()">adicionar item</button>
+    
+    <!-- TABELA EM QUAL MOSTRARA O RETORNO DA FUNCAO ACIMA -->
+    <div style="border-color: rgb(221, 17, 17); border-style: dashed;">
+        <ul *ngFor="let valor of valores">
+            <li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}}</li>
+        </ul>
+    </div>
     
 
 
