@@ -31,8 +31,11 @@ export class AppComponent {
     id:101
   }];
 
+
+  nome=""; 
+  descricao=""
   adicionar(){
-    this.valores.push({nome:'adicionado',descricao:'adicionado',id:0})
+    this.valores.push({nome:this.nome ,descricao:this.descricao,id:0})
   }
 
 }
