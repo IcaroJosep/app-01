@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { ComponenModule } from './components/components.module';
 import { FormsModule } from '@angular/forms';
 import { AlunosComponent } from './alunos/alunos.component';
+import { BindingPageComponent } from './pages/binding-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlunosComponent,
+    BindingPageComponent
     
   ],
   imports: [
